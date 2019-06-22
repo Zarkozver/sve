@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <script>
+        let d=[];
+        function setup(){
+            createCanvas(windowWidth,windowHeight);
+            for(var i=0;i<500;i++){
+                d[i] = new Drop();    
+            }
+            
+        }
+        function draw(){
+            background(222);
+            for(var i=0;i<d.length;i++){
+                d[i].fall();
+                d[i].show();        
+            }
+        }
+        function Drop(){
+            this.x = random(width);
+            this.y = random(-500,-50);
+            this.yspeed = random(4,20);
+            this.l = random(30,40);
+            this.t = random(1,2);
+            this.fall = function(){
+                this.y= this.y + this.yspeed;
+                if(this.y>height){
+                    this.y= random(-500,-50);
+                }
+            }
+            this.show = function(){
+                noStroke();
+                fill(0,0,255);
+                rect(this.x,this.y,this.t,this.l);
+            }
+        }
+    </script>
+    </body>
+</html>            

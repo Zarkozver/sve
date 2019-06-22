@@ -1,0 +1,455 @@
+<html>
+    <head>
+       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                height: 2000px;
+                background-color: #F7F7F7;
+            }
+            .gornji{
+                position: relative;
+                backgsround-image: url(https://landinmobiliaria.com.gt/wp-content/uploads/2018/07/blue-background.png);
+                background-color: dodgerblue;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 1000px;
+                box-sizing: border-box;
+                padding-top: 40px;                
+            }
+            .logo{
+                margin: 0 auto;
+                text-align: center;
+                color: aliceblue;
+                font-family: arial;
+                font-size: 50px;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+            .neka{
+                font-family: 'Raleway', sans-serif;
+                font-size: 50px;
+                width: 700px;
+                text-align: center;
+                line-height: 70px;
+                color: white;
+                margin-left: 32%;
+                margin-bottom: 20px;
+            }
+            .lima{
+                font-family: 'Source Sans Pro', sans-serif;
+                color: white;
+                width: 500px;
+                text-align: center;
+                font-size: 20px;
+                margin-left: 37%;
+                margin-bottom: 50px;
+            }
+            .dugme{
+                width: 200px;
+                height: 70px;
+                box-sizing: border-box;
+                border: 3px solid white;
+                text-align: center;
+                border-radius: 45px;
+                color: aliceblue;
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                padding-top: 19px;   
+                margin-left: 44%;
+            }
+            .wrap{
+                position: absolute;
+                bottom: 0;
+                width: 80%;
+                margin-left: 10%;
+                height: 400px;
+            }
+            .prvi{
+                position: absolute;
+                bottom: 0;
+                float: left;
+                width: 15%;
+                height: 250px;
+                background-color: aqua;
+                background-image: url(https://www.computerhope.com/cdn/web-page-elements.jpg);
+                background-size: cover;
+            }
+            .drugi{
+                position: absolute;
+                bottom: 0;
+                left: 15%;
+                float: left;
+                width: 20%;
+                height:300px;
+                background-color: bisque;
+                background-image: url(https://thewindowsclub-thewindowsclubco.netdna-ssl.com/wp-content/uploads/2016/09/Webpage-In-Edge-600x353.png);
+                background-size: cover;
+            }
+            .treci{
+                position: absolute;
+                bottom: 0;
+                left: 35%;
+                float: left;
+                width: 30%;
+                height:100%;
+                background-color: seagreen;
+                
+                background-image: url(https://moonmicrosystem1.files.wordpress.com/2013/12/web-page-design-for-travel-website.jpg);
+                background-size: cover;
+            }
+            .cetvrti{
+                position: absolute;
+                bottom: 0;
+                left: 85%;
+                float: left;
+                width: 15%;
+                height: 250px;
+                background-color: aqua;
+                background-image: url(https://www.wikihow.com/images/thumb/a/a1/Translate-Webpages-With-Chrome-Step-1-Version-3.jpg/aid2285649-v4-728px-Translate-Webpages-With-Chrome-Step-1-Version-3.jpg);
+                background-size: cover;
+            }
+            .peti{
+                position: absolute;
+                bottom: 0;
+                left: 65%;
+                float: left;
+                width: 20%;
+                height:300px;
+                background-color: bisque;
+                background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/EnglishWikipedia_29June2017.png/1200px-EnglishWikipedia_29June2017.png);
+                background-size: cover;
+            }
+            .neznam{
+                font-family: 'Raleway', sans-serif;
+                font-size: 50px;
+                color: #202020;
+                text-align: center;
+                margin-top: 100px;
+            }
+            .mali1{
+                font-family: 'Source Sans Pro', sans-serif;
+                color: #202020;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .wrap1{
+                position: relative;
+                width: 80%;
+                margin-left: 10%;
+                height: 550px;
+                margin-top: 100px;
+            }
+            .ss{
+                width: 100%;
+                height: 800px;
+                background: white;
+                margin-top: 50px;
+                box-sizing: border-box;
+                padding-top: 1px;
+            }
+            .win{
+                position: relative;
+                width: 30%;
+                height: 45%;
+                background-color: white;
+                box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.4);
+                margin-right: 5%;
+                float: left;
+                box-sizing: border-box;
+                padding: 70px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                margin-bottom: 3%;
+            }
+            .win::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                top: 0;
+                background-color: #DA275B;
+            }
+            .wina::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                top: 0;
+                background-color: #76C208;
+            }
+            .winb::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                top: 0;
+                background-color: #E8BE8E;
+            }
+            
+            .clear{
+                clear: both;
+            }
+            .wina{
+                position: relative;
+                width: 30%;
+                height: 45%;
+                background-color: white;
+                box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.4);
+                margin-right: 5%;
+                float: left;
+                margin-bottom: 3%;
+                box-sizing: border-box;
+                padding: 70px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+            .winb{
+                position: relative;
+                width: 30%;
+                height: 45%;
+                background-color: white;
+                box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.4);
+                box-sizing: border-box;
+                padding: 70px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                float: left;
+                margin-bottom: 3%;
+            }
+            .win1a{
+                position: relative;
+                width: 30%;
+                height: 45%;
+                background-color: white;
+                box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.4);
+                margin-right: 5%;
+                float: left;
+                box-sizing: border-box;
+                padding: 70px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+            .win1{
+                position: relative;
+                width: 30%;
+                height: 45%;
+                background-color: white;
+                box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.4);
+                margin-right: 5%;
+                float: left;
+                box-sizing: border-box;
+                padding: 70px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+            .win1b{
+                position: relative;
+                width: 30%;
+                height: 45%;
+                background-color: white;
+                box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.4);
+                box-sizing: border-box;
+                padding: 70px;
+                padding-bottom: 50px;
+                padding-top: 50px;
+                float: left;
+            }
+            .win1:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                top: 0;
+                background-color: #81CE79;
+            }
+            .win1a:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                top: 0;
+                background-color: #B46AF8;
+            }
+            .win1b:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                top: 0;
+                background-color: #3780C2;
+            }
+            .unutra{
+                border: 0px solid black;
+                width: 100%;
+                height: 100%;
+            }
+            .slika{
+                width: 70px;
+                margin-top: 40px;
+                margin-right: 30px;
+                float: left;
+            }
+            .tesr{
+                float: left;
+                height: 100%;
+                width: 68%;
+            }
+            .ness{
+                font-family: 'Raleway', sans-serif;
+                color: #202020;
+                font-size: 19px;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            .nekii{
+                font-family: 'Raleway', sans-serif;
+                color: #202020;
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            .ss1{
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 100px;
+                width: 70%;
+                height: 300px;
+            }
+            .slika1{
+                width: 30%;
+                margin-right: 4.3%;
+                height: 100%;
+                background-size: cover;
+                border: 1px solid rgba(0,0,0,0.4);
+            }
+            .slika2{
+                width: 30%;
+                height: 100%;
+                background-size: cover;
+                border: 1px solid rgba(0,0,0,0.4);
+            }
+            .bot{
+                position: relative;
+                bottom: 0;
+                background-color: #202020;
+                height: 300px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gornji">
+            <div class="logo">
+                UHOST
+            </div>
+            <div class="neka">
+                THE ULTIMATE WORDPRESS <b> WHMCS HOSTING </b> THEME
+            </div>
+            <div class="lima">
+                Contented get distrusts certainty nay are frankness concealed ham. On unaffected resolution on considered of. No thought me husband or colonel forming effects. End sitting shewing who saw besides son musical adapted.
+            </div>
+            <div class="dugme">
+                LIVE PREVIEW
+            </div>
+            <div class="wrap">
+                <div class="prvi"></div>
+                <div class="drugi"></div>
+                <div class="treci"></div>
+                <div class="cetvrti"></div>
+                <div class="peti"></div>
+            </div>
+        </div>
+        <div class="neznam">
+            THE ULTIMATE POWERFUL <b>FEATURES</b>
+        </div>
+        <div class="mali1">
+            Sing long her way size. Waited end mutual missed myself the little sister one. So in pointed or chicken cheered<br> neither spirits invited. Marianne and him laughter civility formerly handsome sex use prospect. 
+        </div>
+        <div class="wrap1">
+            <div class="win">
+                <div class="unutra">
+                    <img src="https://img.icons8.com/color/96/000000/settings.png" alt="" class="slika">
+                    <div class="tesr">
+                        <div class="ness">Elementor Page Builder</div>
+                        <div class="nekii">
+                            Timed balls match at by rooms we. Fat not boy neat left had with past here call. Court nay merit few nor party learn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wina">
+                <div class="unutra">
+                    <img src="https://img.icons8.com/color/96/000000/picture.png" alt="" class="slika">
+                    <div class="tesr">
+                        <div class="ness">WHMCS</div>
+                        <div class="nekii">New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="winb">
+                <div class="unutra">
+                    <img src="https://img.icons8.com/color/96/000000/plus.png" alt="" class="slika">
+                    <div class="tesr">
+                        <div class="ness">MailChimp Integration</div>
+                        <div class="nekii">
+                            Departure so attention pronounce satisfied daughters am. But shy tedious pressed studied opinion entered windows off. Advantage dependent suspicion convinced provision him yet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="win1">
+                <div class="unutra">
+                    <img src="https://img.icons8.com/color/96/000000/calendar.png" alt="" class="slika">
+                    <div class="tesr">
+                        <div class="ness">Elementor Page Builder</div>
+                        <div class="nekii">
+                            Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="win1a">
+                <div class="unutra">
+                    <img src="https://img.icons8.com/color/96/000000/toolbox.png" alt="" class="slika">
+                    <div class="tesr">
+                        <div class="ness">Elementor Page Builder</div>
+                        <div class="nekii">Do am he horrible distance marriage so although. Afraid assure square so happen mr an before. His many same been well can high that. Forfeited did law eagerness allowance improving assurance bed.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="win1b">
+                <div class="unutra">
+                    <img src="https://img.icons8.com/color/96/000000/home.png" alt="" class="slika">
+                    <div class="tesr">
+                        <div class="ness">Elementor Page Builder</div>
+                        <div class="nekii">Unfeeling so rapturous discovery he exquisite. Reasonably so middletons or impression by terminated. Old pleasure required removing elegance him had. Down she bore sing saw calm high.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ss">
+            <div class="neznam">SCREENSHOTS</div>
+            <div class="ss1">
+                <img src="https://lh3.googleusercontent.com/TbR5MxE0r2K0FVAq535YPX01PEf3IuYkFfuQGQYQeHNos-oinQ7FSWqsyQualNmeJFcXMnCgeQ=w640-h400-e365" alt="" class="slika1">
+                <img src="https://marketplace-cdn.atlassian.com/files/images/7e048e74-76f6-4451-8093-57ab081c545c.png" alt="" class="slika1">
+                <img src="https://academicwebpages.com/wp-content/uploads/2017/02/Friedman-Lab.png" alt="" class="slika2">
+            </div>
+        </div>
+        <div class="bot">
+            
+        </div>
+    </body>
+</html>

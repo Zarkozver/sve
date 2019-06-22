@@ -1,0 +1,1806 @@
+*{
+                scroll-behavior: smooth;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .logo{
+                margin: 0 auto;
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 250px;
+            }
+            .nav{
+                position: fixed;
+                z-index: 44;
+                top: 0;
+                width: 100%;
+                height: 80px;
+                box-sizing: border-box;
+                padding: 19px;
+                padding-left: 100px;
+                padding-right: 200px;
+                background-image: linear-gradient(to top, transparent 10%, #202020 110%);
+            }
+            .menu,.menu1{
+                float: right;
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                font-weight: bold;
+                font-size: 25px;
+                text-decoration: none;
+                margin-left: 40px;
+                height: 40px;
+                transition: all 0.2s;
+                margin-top: 14px;
+            }
+            .menu1{
+                color: #202020;
+            }
+            .menu1:hover{
+                border-bottom:2px solid #202020;
+            }
+            .bg,.bg1{
+                width: 100%;
+                height: 100vh;                
+                overflow: hidden;
+                z-index: -55;
+            }
+            .bg1{
+                position: relative;
+            }
+            .menu:hover{
+                border-bottom: 2px solid white;
+            }
+            .strelica{
+                position: absolute;
+                clip-path: polygon(50% 72%, 85% 48%, 100% 66%, 50% 100%, 0 66%, 15% 48%);
+                background-color: white;
+                height: 80px;
+                left: 48%;
+                bottom: 3%;
+                width: 80px;
+            }
+            .strelica2{
+                position: fixed;
+                clip-path: polygon(50% 72%, 85% 48%, 100% 66%, 50% 100%, 0 66%, 15% 48%);
+                background-color: white;
+                height: 80px;
+                left: 47%;
+                bottom: 3%;
+                width: 80px;
+            }
+            .filmovi{
+                position: relative;
+                background-image: radial-gradient(rgba(99, 102, 130,1.5),#1D203C );
+                width: 100%;
+                height: 100vh;
+                box-sizing: border-box;
+                padding: 40px;
+            }
+            .naslov{
+                font-family: 'Ubuntu', sans-serif;
+                color: white;
+                margin-top: 30px;
+                font-size: 60px;
+                border-bottom: 0px solid white;
+                margin-left: 25%;
+                margin-right: 25%;
+                text-align: center;
+            }
+            .naslov1{
+                font-family: 'Ubuntu', sans-serif;
+                color: #202020;
+                margin-top: 30px;
+                height: 80px;
+                font-size: 60px;
+                border-bottom: 0px solid #202020;
+                margin-left: 25%;
+                margin-right: 25%;
+                text-align: center;
+            }
+            .lajna{
+                position: relative;
+                width: 100%;
+                height: 3px;
+                margin-top: 250px;
+                background-color: white;
+            }
+            .lajna:after{
+                content: '';
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 100%;
+                top: calc(0 - 20px);
+                clip-path: polygon(0 0, 0 50%, 100% 0);
+
+            }
+            .lajna:before{
+                content: '';
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 100%;
+                top: calc(0% - 20px);
+                clip-path: polygon(0 100%, 0 50%, 100% 100%);
+
+
+            }
+            .lajna1{
+                position: relative;
+                width: 100%;
+                height: 3px;
+                margin-top: 300px;
+                background-color: white;
+            }
+            .lajna1:after{
+                content: '';
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 100%;
+                top: calc(0 - 20px);
+                clip-path: polygon(0 0, 0 50%, 100% 0);
+
+            }
+            .lajna1:before{
+                content: '';
+                background-color: white;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 100%;
+                top: calc(0% - 20px);
+                clip-path: polygon(0 100%, 0 50%, 100% 100%);
+
+
+            }
+            .unutra,.unutra1,.unutra2,.unutra3,.unutra4,.unutra5,.unutra6,.unutra7,.unutra8,.unutra9,.unutra10,.unutra11,.unutra12,.unutra13,.unutra14,.unutra15,.unutra16,.unutra17,.unutra18,.unutra19,.unutra20,.unutra21,.unutra22{
+                border-radius: 9px;
+            }
+            .film{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 6%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film:hover .unutra{
+                display: block;
+            }
+            .film1{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 12%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra1{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra1:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra1:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film1:hover .unutra1{
+                display: block;
+            }
+            .godina{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 3%;
+                top: -12px;
+            }
+            .godina:after{
+                content: '2008';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }
+            .film2{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 22%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra2{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra2:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra2:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film2:hover .unutra2{
+                display: block;
+            }
+            .godina1{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 18%;
+                top: -12px;
+            }
+            .godina1:after{
+                content: '2010';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }           
+            .film3{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 31.5%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra3{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra3:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra3:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film3:hover .unutra3{
+                display: block;
+            }
+            .godina2{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 27%;
+                top: -12px;
+            }
+            .godina2:after{
+                content: '2011';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }            
+            .film4{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 37%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra4{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra4:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra4:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film4:hover .unutra4{
+                display: block;
+            }          
+            .film5{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 48%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra5{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra5:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra5:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film5:hover .unutra5{
+                display: block;
+            }
+            .godina3{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 42%;
+                top: -12px;
+            }
+            .godina3:after{
+                content: '2012';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }
+            .godina4{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 55%;
+                top: -12px;
+            }
+            .godina4:after{
+                content: '2013';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }            
+            .film6{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 60%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra6{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra6:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra6:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film6:hover .unutra6{
+                display: block;
+            }       
+            .film7{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 66%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra7{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .film7:hover .unutra7{
+                display: block;
+            }
+            .unutra7:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra7:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }          
+            .godina5{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 70%;
+                top: -12px;
+            }
+            .godina5:after{
+                content: '2014';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }         
+            .film8{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 75%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra8{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra8:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra8:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film8:hover .unutra8{
+                display: block;
+            }
+            .film9{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 81%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra9{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra9:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra9:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film9:hover .unutra9{
+                display: block;
+            }          
+            .godina6{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 85%;
+                top: -12px;
+            }
+            .godina6:after{
+                content: '2015';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }
+            .film10{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 90%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra10{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra10:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra10:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film10:hover .unutra10{
+                display: block;
+            }    
+            .film11{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 6%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra11{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra11:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra11:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film11:hover .unutra11{
+                display: block;
+            }
+            .godina7{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 11%;
+                top: -12px;
+            }
+            .godina7:after{
+                content: '2016';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }        
+            .film12{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 15%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra12{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra12:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra12:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film12:hover .unutra12{
+                display: block;
+            }           
+            .film13{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 22%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra13{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra13:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra13:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film13:hover .unutra13{
+                display: block;
+            }          
+            .godina8{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 27%;
+                top: -12px;
+            }
+            .godina8:after{
+                content: '2017';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }          
+            .film14{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 32%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra14{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra14:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra14:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film14:hover .unutra14{
+                display: block;
+            }      
+            .film15{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 38%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra15{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra15:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra15:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film15:hover .unutra15{
+                display: block;
+            }
+            .film16{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 44%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra16{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra16:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra16:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film16:hover .unutra16{
+                display: block;
+            }
+            .godina9{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 49%;
+                top: -12px;
+            }
+            .godina9:after{
+                content: '2018';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }
+            .film17{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 54%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra17{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra17:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra17:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film17:hover .unutra17{
+                display: block;
+            }     
+            .film18{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 60%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra18{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra18:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra18:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film18:hover .unutra18{
+                display: block;
+            }           
+            .film20{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 78%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra20{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra20:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra20:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film20:hover .unutra20{
+                display: block;
+            }
+            .godina10{
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: white;
+                left: 73%;
+                top: -12px;
+            }
+            .godina10:after{
+                content: '2019';
+                position: relative;
+                font-size: 30px;
+                color: white;
+                left: -27px;
+                top: 30px;
+            }
+            .film21{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 84%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra21{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra21:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra21:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film21:hover .unutra21{
+                display: block;
+            }
+            .film19{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 66%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra19{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra19:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra19:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film19:hover .unutra19{
+                display: block;
+            }
+            .film22{
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                margin-left: ;
+                left: 90%;
+                border-radius: 50%;
+                top: calc(0% - 10px);
+                background-color: #202020;
+                border: 2px solid white;
+                cursor: pointer;
+            }
+            .unutra22{
+                position: relative;
+                width: 300px;
+                height: 200px;
+                background-color: #151515;
+                left: calc(0% - 140px);
+                top: calc(0% - 220px);
+                display: none;
+            }
+            .unutra22:after{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                left: 42%;
+                bottom: -2px;
+                transform: skew(0,44deg);
+            }
+            .unutra22:before{
+                content: '';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #151515;
+                right: 41.5%;
+                bottom: -2px;
+                transform: skew(0,-44deg);
+            }
+            .film22:hover .unutra22{
+                display: block;
+            }
+            .poster{
+                position: absolute;
+                float: left;
+                height: 100%;
+                z-index: 33;
+                border-right: 3px solid red;
+            }
+            .naslovfilma,.naslovfilma1,.naslovfilma2,.naslovfilma3,.naslovfilma4,.naslovfilma5{
+                position: absolute;
+                border-bottom: 1.5px solid white;
+                z-index: 44;
+                left: 60%;
+                top: 6%;
+                font-size: 20px;
+                color: white;
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                
+            }
+            .naslovfilma1{
+                left: 50%;
+            }
+            .naslovfilma2{
+                 left: 57%;   
+            }
+            .naslovfilma3{
+                left: 66%;
+            }
+            .naslovfilma4{
+                left: 47%;
+            }
+            .marvel{
+                font-family: Lato , sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                 color: white;
+                font-size: 40px;
+                margin-left: 200px;
+                width: 140px;
+                float: left;
+            }
+            .naslovfilma5{
+                left: 53%;
+            }
+            .datum,.datum1{
+                position: absolute;
+                font-family: 'Open Sans', sans-serif;
+                z-index: 44;
+                left: 47%;
+                margin-top: 10px;
+                top: 22%;
+                font-size: 16px;
+                color: white;
+                text-align: center;    
+            }
+            .datum1{
+                top:31%;
+            }
+            .direktor,.direktor1{
+                position: absolute;
+                font-family: 'Open Sans', sans-serif;
+                z-index: 44;
+                left: 47%;
+                margin-top: 10px;
+                top: 50%;
+                font-size: 16px;
+                color: white;
+                text-align: center;    
+            }
+            .direktor1{
+                top:54%;
+            }
+            .ocena,.ocena1,.ocena2{
+                position: absolute;
+                font-family: 'Open Sans', sans-serif;
+                z-index: 44;
+                left: 53%;
+                margin-top: 10px;
+                bottom: 15%;
+                font-size: 16px;
+                color: white;
+                text-align: center; 
+            }
+            .ocena1{
+                bottom: 10%;
+            }
+            .ocena2{
+                bottom: 7%;
+            }
+            .superheroji{
+                position:relative;
+                background-image: linear-gradient(to right,#C9D6FF,#E2E2E2);
+                width: 100%;
+                height: 100vh;
+                box-sizing: border-box;
+                padding: 40px;
+            }
+            .scroll{
+                margin-top: 50px;
+                width: 70%;
+                height:660px;
+                margin-left: 17%;
+                margin-right: 13%;
+                border: 0px solid black;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                padding-left: 30px;
+                padding-top: -90px;
+                padding-bottom: 20px;
+            }
+            .scroll::-webkit-scrollbar{
+                display: none;
+            }
+            *::-webkit-scrollbar{
+                display: none;
+            }
+            .sheroj{
+                position: relative;
+                height: 400px;
+                background-color: #151515;
+                width: 220px;
+                margin-right: 30px;
+                margin-top: 30px;
+                float: left;
+                transition: all .4s;
+                cursor: pointer;
+            }
+            .shslika{
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 55%;
+                overflow: hidden;
+                border-bottom: 4px solid red;
+                transition: all .4s;
+            }
+            .sheroj:hover .joj{
+                transform: scale(1.05);
+                
+            }
+            .sheroj:after{
+                position: absolute;
+                content: '';
+                height: 30px;
+                width: 30px;
+                background-color: #D6DCF1;
+                right: 0;
+                clip-path:polygon(0% 101%,101% 101%,101% 0%);
+                bottom: 0;
+            }
+            .joj{
+                width: 100%;
+                transition: all .3s;
+            }
+            .donjish{
+                width: 100%;
+                height: 45%;
+
+                box-sizing: border-box;
+                padding: 17px;
+                padding-top: 10px;
+                padding-right: 10px;
+            }
+            .sheroj:hover .donjish1{
+                border-bottom: 180px solid red;
+            }
+            .donjish1{
+                width: 100%;
+                height: 55%;
+                position: absolute;
+                z-index: 0;
+                left: 0;
+                top: 0;
+                transition: all 0.4s;
+            }
+            .imeh{
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                font-size: 22px;
+
+                position: absolute;
+            }
+            .imec,.imec1{
+                font-family: 'Nunito', sans-serif;
+                color: rgba(256,256,256,0.5);
+                font-size: 18px;
+                margin-top: 30px;
+     
+                position: absolute;
+            }
+            .imec1{
+                margin-top: 120px;
+            }
+            .glumac{
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                font-size: 22px;
+                position: absolute;
+                margin-top:90px;
+            }
+            .negativci{
+                overflow-y: scroll;
+                position: relative;
+                background-image: linear-gradient(to top,#2b5876,#4e4376);
+                background-image: linear-gradient(to top,#0f0c29,#302b63,#24243e);
+                width: 100%;
+                height: 100vh;
+                box-sizing: border-box;
+                padding: 40px;
+            }
+            .wrap{
+                margin-left: 22%;
+                margin-right: 20%;
+                margin-top: 100px;
+                width: 60%;
+                height: 500px;
+                border: 0px solid black;
+            }
+            .faza{
+                cursor: pointer;
+                position: relative;
+                width: 30%;
+                height: 100%;
+                background-color: #151515;
+                margin-right: 3%;
+                float: left;
+                border-radius: 10px;
+            }
+            .faza:before{
+                content: '';
+                position: absolute;
+                background-color: #151515;
+                width: 40px;
+                height: 40px;
+                transform: skew(0,35deg);
+                left: 38%;
+                bottom: -3%;
+            }
+            .faza:after{
+                content: '';
+                position: absolute;
+                background-color: #151515;
+                width: 40px;
+                height: 40px;
+                transform: skew(0,-35deg);
+                left: calc(38% + 40px);
+                bottom: -3%;
+            }
+            .fazas{
+                width: 100%;
+                height: 70%;
+                overflow: hidden;
+                background-color: ;
+            }
+            .sfaze{
+                posistion: inherit;
+                width: 100%;
+                background-position: bottom;
+                transition: all 0.4s;
+                cursor: pointer;
+            }
+            .faza:hover .sfaze{
+                transform: scale(1.05);
+                tsop: -5%;
+                botstom: -5%;
+            }
+            .vfaze{
+                height: 30%;
+                width: 100%;
+            }
+            .dfaze{
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 15px;
+            }
+            .dfaze1{
+                font-family: 'Nunito', sans-serif;
+                color: rgba(256,256,256,0.6);
+                text-align: center;
+                font-size: 23px;
+                margin-top: 15px;
+            }
+            .videobg{
+                width: 122%;
+                height: 100%;
+                position: absolute;
+                z-index: -23;
+                left: -10%;
+            }
+            .opste{
+                position: relative;
+                background-image: linear-gradient(to left,#333,#dd1818 );
+                width: 100%;
+                height: 100vh;
+                box-sizing: border-box;
+                padding: 40px;
+            }
+            .shtekst{
+                width: 360px;
+                margin-top: 40px;
+                float: left;
+                transition: all 0.7s;
+            }
+            .shtekst:hover{
+                margin-top: 10px;
+            }
+            .spiderman:hover{
+                transform: scale(1.05);
+            }
+            .tekstinfo{
+                color: white;
+                font-size: 28px;
+                width: 55%;
+                margin-left: 50px;
+                margin-top: 70px;
+                float: left;
+                font-family: 'Lato';
+            }
+            .spiderman{
+                float: right;
+                width: 400px;
+                margin-top: 100px;
+                transition: all 0.7s;
+            }
+            .wrapp{
+                margin-top: 60px;
+            }
+            .wrapneki{
+                position: absolute;
+                top: 2%;
+                right: 10.4%;
+            }
+            .footer{
+                position: relative;
+                box-sizing: border-box;
+                width: 100%;
+                height: 350px;
+                background-color: black;
+                padding: 50px;
+                padding-left: 15%;
+                padding-right: 15%;
+                padding-bottom: 10px;
+            }
+            .villian{
+                height: 350px;
+                width: 43%;
+                margin-top: 20px;
+                margin-right: 1%;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                margin-left: 18px;
+                background-color: #202020;
+                background-image: linear-gradient(#0F2027,#203A43,#2C5364);
+                background-image: linear-gradient(to top,#c31432,#240b36 110%);
+                backgrosund-image: linear-gradient(to top,#0f0c29,#302b63,#24243e);
+                border-radius: 10px;
+                box-shadow: 0px 0px 24px 10px rgba(0,0,0,0.5);
+                transition: all 0.4s;
+                margin-bottom: 40px;
+            }
+            .slikaneg{
+                width: 40%;
+                transition: all 0.6s;
+                float: left;
+            }
+            .tekstneg{
+               width: 60%;
+                height: 100%;
+                float: right;
+                box-sizing: border-box;
+                padding: 40px;
+                text-align: center;
+            }
+            .imeneg{
+                color: white;
+                font-family: Montserrat;
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            .opisneg{
+                font-family: 'Fira Sans', sans-serif;
+                font-size: 18px;
+                color: aliceblue;
+                line-height: 23px;
+            }
+            .wrapzasve{
+                width: 90%;
+                height: 700px;
+                margin-top: 60px;
+                overflow: scroll;
+                padding-bottom: 30px;
+                margin-left: 8%;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            .villian:hover {
+                transform: scale(1.03);
+            }
+            .ufoot{
+                width: 100%;
+                height: 100%;
+                background-colosr: green;
+                position: relative;
+            }
+            .foottxt{
+                position: absolute;
+                bottom: 0;
+                left: 41%;
+                color: rgba(256,256,256,0.6);
+                font-size: 25px;
+                font-family: Fira Sans;
+            }
+            .menufoot{
+                color: white;
+                opacity: 0.6;
+                font-size: 25px;
+                margin-right: 10px;
+                text-decoration: none;
+                line-height: 40px;
+                transition: all 0.2;
+                font-family: Fira Sans; 
+            }
+            .menufoot:hover{
+                opacity: 1;
+            }
+            .wrapzafoot{
+                width: 100%;
+                text-align: center;
+                border-right: px solid rgba(256,256,256,0.6);
+                background-colsor: forestgreen;
+            }
+            .lorem{
+                font-family: Fira Sans; 
+                font-size: 25px;
+                color: rgba(256,256,256,0.6);
+                text-align: center;
+                margin-top: 30px;
+            }
+#iron-man{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: none;
+    top: 0;
+    left: 0;
+}
